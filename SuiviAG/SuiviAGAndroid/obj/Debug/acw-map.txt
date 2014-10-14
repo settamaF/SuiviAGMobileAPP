@@ -1,0 +1,3 @@
+SuiviAGAndroid.HomeScreen;suiviagandroid.HomeScreen
+SuiviAGAndroid.Application.AGResidenceAdapter;suiviagandroid.application.AGResidenceAdapter
+SuiviAGAndroid.UI.AGResidenceDetailsScreen;suiviagandroid.ui.AGResidenceDetailsScreen

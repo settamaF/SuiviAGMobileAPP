@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuiviAGAndroid", "SuiviAGAndroid\SuiviAGAndroid.csproj", "{2DFD2082-6E2F-4D23-BD15-11873B17DB28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuiviAG.Core", "SuiviAG.Core\SuiviAG.Core.csproj", "{BF480A6B-57B2-4572-8AED-F4011454AF04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DFD2082-6E2F-4D23-BD15-11873B17DB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFD2082-6E2F-4D23-BD15-11873B17DB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFD2082-6E2F-4D23-BD15-11873B17DB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFD2082-6E2F-4D23-BD15-11873B17DB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF480A6B-57B2-4572-8AED-F4011454AF04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF480A6B-57B2-4572-8AED-F4011454AF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF480A6B-57B2-4572-8AED-F4011454AF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF480A6B-57B2-4572-8AED-F4011454AF04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SuiviAGAndroid\SuiviAGAndroid.csproj
+	EndGlobalSection
+EndGlobal

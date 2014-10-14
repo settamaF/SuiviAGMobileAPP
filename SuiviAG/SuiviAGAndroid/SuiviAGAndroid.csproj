@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{2DFD2082-6E2F-4D23-BD15-11873B17DB28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SuiviAGAndroid</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>SuiviAGAndroid</AssemblyName>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\SuiviAG.Core\1 - Data\AGDatabase.cs">
+      <Link>1 - Data\AGDatabase.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\1 - Data\SQLite.cs">
+      <Link>1 - Data\SQLite.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\2 - DataAccess\AGRepository.cs">
+      <Link>2 - DataAccess\AGRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\3 - Business\AGManagement\AGManager.cs">
+      <Link>3 - Business\AGManagement\AGManager.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\3 - Business\Base\EntityBase.cs">
+      <Link>3 - Business\Base\EntityBase.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\3 - Business\Base\IEntity.cs">
+      <Link>3 - Business\Base\IEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\3 - Business\Entity\AGResidence.cs">
+      <Link>3 - Business\Entity\AGResidence.cs</Link>
+    </Compile>
+    <Compile Include="..\SuiviAG.Core\3 - Business\Entity\AGTravaux.cs">
+      <Link>3 - Business\Entity\AGTravaux.cs</Link>
+    </Compile>
+    <Compile Include="4 - Application\AGResidenceAdapter.cs" />
+    <Compile Include="5 - UI\AGResidenceDetailsScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\layout\AGResidenceListItem.axml" />
+    <AndroidResource Include="Resources\layout\AGResidenceDetails.axml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="1 - Data\" />
+    <Folder Include="2 - DataAccess\" />
+    <Folder Include="3 - Business\" />
+    <Folder Include="5 - UI\" />
+    <Folder Include="4 - Application\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+  </ItemGroup>
+</Project>
