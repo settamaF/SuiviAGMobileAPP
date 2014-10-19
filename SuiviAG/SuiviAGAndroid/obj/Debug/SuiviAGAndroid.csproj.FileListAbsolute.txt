@@ -18,3 +18,4 @@ C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndr
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-mdpi\icon.png
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxlistitem.xml
