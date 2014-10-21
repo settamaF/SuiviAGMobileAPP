@@ -17,6 +17,8 @@ namespace SuiviAGAndroid
 		protected Application.AGResidenceAdapter agResidenceList;
 		protected IList<AGResidence> agResidences;
 		protected Button addAGResidence = null;
+		protected Button srcAGResidence = null;
+		protected EditText txtAGResidenceSrc = null;
 		protected ListView agResidenceListView = null;
 
 		protected override void OnCreate (Bundle bundle)
@@ -34,12 +36,19 @@ namespace SuiviAGAndroid
 					parentView.SetBackgroundColor (Color.Rgb (0x26, 0x75, 0xFF));
 				}
 			}
-			addAGResidence = FindViewById<Button> (Resource.Id.AddAGResidenceButton);
 			agResidenceListView = FindViewById<ListView> (Resource.Id.listResidence);
 
+			txtAGResidenceSrc = FindViewById<EditText> (Resource.Id.txtAGResidenceSrc);
+			addAGResidence = FindViewById<Button> (Resource.Id.AddAGResidenceButton);
 			if (addAGResidence != null) {
 				addAGResidence.Click += (sender, e) => {
 					StartActivity (typeof(AGResidenceDetailsScreen));
+				};
+			}
+			srcAGResidence = FindViewById<Button> (Resource.Id.btnAGResidenceSrc);
+			if (srcAGResidence != null) {
+				srcAGResidence.Click += (sender, e) => {
+					SrcResidence();
 				};
 			}
 		}
@@ -49,7 +58,21 @@ namespace SuiviAGAndroid
 			base.OnResume();
 
 			agResidences = SuiviAG.Core.Business.AGManager.GetAGResidence ();
+			agResidenceList = new SuiviAGAndroid.Application.AGResidenceAdapter (this, agResidences);
+			agResidenceListView.Adapter = agResidenceList;
+		}
 
+		protected void SrcResidence()
+		{
+			IList <AGResidence> tmp = new List<AGResidence>();
+			agResidences = SuiviAG.Core.Business.AGManager.GetAGResidence ();
+
+			foreach (AGResidence res in agResidences) {
+				if (res.Name.Contains(txtAGResidenceSrc.Text)) {
+					tmp.Add (res);
+				}
+			}
+			agResidences = tmp;
 			agResidenceList = new SuiviAGAndroid.Application.AGResidenceAdapter (this, agResidences);
 			agResidenceListView.Adapter = agResidenceList;
 		}

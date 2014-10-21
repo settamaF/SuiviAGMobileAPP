@@ -3,6 +3,26 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/layoutAGResidenceSrc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtAGResidenceSrc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:layout_weight="1"
+            android:maxLines="1" />
+        <Button
+            android:id="@+id/btnAGResidenceSrc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAGResidenceSrc"
+            android:layout_weight="2"
+            android:text="Src" />
+    </LinearLayout>
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
