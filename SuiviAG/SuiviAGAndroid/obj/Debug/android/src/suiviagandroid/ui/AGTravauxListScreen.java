@@ -1,7 +1,7 @@
-package suiviagandroid;
+package suiviagandroid.ui;
 
 
-public class HomeScreen
+public class AGTravauxListScreen
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -11,15 +11,15 @@ public class HomeScreen
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("SuiviAGAndroid.HomeScreen, SuiviAGAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", HomeScreen.class, __md_methods);
+		mono.android.Runtime.register ("SuiviAGAndroid.UI.AGTravauxListScreen, SuiviAGAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AGTravauxListScreen.class, __md_methods);
 	}
 
 
-	public HomeScreen () throws java.lang.Throwable
+	public AGTravauxListScreen () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == HomeScreen.class)
-			mono.android.TypeManager.Activate ("SuiviAGAndroid.HomeScreen, SuiviAGAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == AGTravauxListScreen.class)
+			mono.android.TypeManager.Activate ("SuiviAGAndroid.UI.AGTravauxListScreen, SuiviAGAndroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

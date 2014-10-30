@@ -14,6 +14,7 @@ namespace SuiviAG.Core.DataLayer
 		{
 			CreateTable<AGTravaux> ();
 			CreateTable<AGResidence> ();
+			InitDatabase ();
 		}
 
 		public IEnumerable<T> GetItems<T> () where T : IEntity, new ()
@@ -63,6 +64,67 @@ namespace SuiviAG.Core.DataLayer
 				#endif
 			}
 		}
+
+		//Function to init database for sample
+		public void InitDatabase()
+		{
+			if (this.Table<AGResidence> ().Count () == 0)
+				this.InitDatabaseResidence ();
+
+
+
+			if (this.Table<AGTravaux> ().Count () == 0)
+				this.InitDatabaseTravaux ();
+		}
+
+		private void InitDatabaseResidence()
+		{
+			var newResidence = new AGResidence ();
+			newResidence.Name = "Clos bastille";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Espace Republique";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Refuge";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Robert";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Villas Olympe";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Hibicus";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Aromes";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+			newResidence.Name = "Belem1";
+			newResidence.Adress = "";
+			this.Insert (newResidence);
+		}
+
+		private void InitDatabaseTravaux()
+		{
+
+		}
+
+		private void InitDatabaseEntreprise()
+		{
+
+		}
+
+		private void initDatabaseDevis()
+		{
+
+		}
+
+		private void initDatabaseFacture()
+		{
+		}
+
 	}
 }
 

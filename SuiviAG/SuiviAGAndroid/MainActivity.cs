@@ -14,12 +14,11 @@ namespace SuiviAGAndroid
 	[Activity (Label = "Suivi AG", MainLauncher = true, Icon = "@drawable/icon")]
 	public class HomeScreen : Activity
 	{
-		protected Application.AGResidenceAdapter agResidenceList;
-		protected IList<AGResidence> agResidences;
-		protected Button addAGResidence = null;
-		protected Button srcAGResidence = null;
-		protected EditText txtAGResidenceSrc = null;
-		protected ListView agResidenceListView = null;
+		protected Button addAGTravauxBtn = null;
+		protected Button lstAGTravauxBtn = null;
+		protected Button lstAGResidenceBtn = null;
+		protected ImageButton srcAG = null;
+		protected EditText txtAGSrc = null;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -36,33 +35,43 @@ namespace SuiviAGAndroid
 					parentView.SetBackgroundColor (Color.Rgb (0x26, 0x75, 0xFF));
 				}
 			}
-			agResidenceListView = FindViewById<ListView> (Resource.Id.listResidence);
 
-			txtAGResidenceSrc = FindViewById<EditText> (Resource.Id.txtAGResidenceSrc);
-			addAGResidence = FindViewById<Button> (Resource.Id.AddAGResidenceButton);
-			if (addAGResidence != null) {
-				addAGResidence.Click += (sender, e) => {
+			txtAGSrc = FindViewById<EditText> (Resource.Id.txtAGSrc);
+
+			addAGTravauxBtn = FindViewById<Button> (Resource.Id.AddAGTravauxButton);
+			if (addAGTravauxBtn != null) {
+				addAGTravauxBtn.Click += (sender, e) => {
 					StartActivity (typeof(AGResidenceDetailsScreen));
 				};
 			}
-			srcAGResidence = FindViewById<Button> (Resource.Id.btnAGResidenceSrc);
-			if (srcAGResidence != null) {
-				srcAGResidence.Click += (sender, e) => {
-					SrcResidence();
+
+			addAGTravauxBtn = FindViewById<Button> (Resource.Id.AddAGTravauxButton);
+			if (addAGTravauxBtn != null) {
+				addAGTravauxBtn.Click += (sender, e) => {
+					StartActivity (typeof(AGResidenceDetailsScreen));
+				};
+			}
+//			srcAG = FindViewById<ImageButton> (Resource.Id.btnAGSrc);
+//			if (srcAG != null) {
+//				srcAG.Click += (sender, e) => {
+//					SrcResidence();
+//				};
+//			}
+			lstAGResidenceBtn = FindViewById<Button> (Resource.Id.lstAGResidenceButton);
+			if (lstAGResidenceBtn != null) {
+				lstAGResidenceBtn.Click += (sender, e) => {
+					StartActivity(typeof(AGResidenceListScreen));
+				};
+			}
+			lstAGTravauxBtn = FindViewById<Button> (Resource.Id.lstAGTravauxButton);
+			if (lstAGTravauxBtn != null) {
+				lstAGTravauxBtn.Click += (sender, e) => {
+					StartActivity(typeof(AGTravauxListScreen));
 				};
 			}
 		}
 
-		protected override void OnResume()
-		{
-			base.OnResume();
-
-			agResidences = SuiviAG.Core.Business.AGManager.GetAGResidence ();
-			agResidenceList = new SuiviAGAndroid.Application.AGResidenceAdapter (this, agResidences);
-			agResidenceListView.Adapter = agResidenceList;
-		}
-
-		protected void SrcResidence()
+		/*protected void SrcResidence()
 		{
 			IList <AGResidence> tmp = new List<AGResidence>();
 			agResidences = SuiviAG.Core.Business.AGManager.GetAGResidence ();
@@ -75,7 +84,7 @@ namespace SuiviAGAndroid
 			agResidences = tmp;
 			agResidenceList = new SuiviAGAndroid.Application.AGResidenceAdapter (this, agResidences);
 			agResidenceListView.Adapter = agResidenceList;
-		}
+		}*/
 	}
 }
 

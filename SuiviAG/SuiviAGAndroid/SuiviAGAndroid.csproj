@@ -73,6 +73,8 @@
     </Compile>
     <Compile Include="4 - Application\AGResidenceAdapter.cs" />
     <Compile Include="5 - UI\AGResidenceDetailsScreen.cs" />
+    <Compile Include="5 - UI\AGResidenceListScreen.cs" />
+    <Compile Include="5 - UI\AGTravauxListScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -91,6 +93,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\layout\AGTravauxListItem.axml" />
+    <AndroidResource Include="Resources\drawable\Search.png" />
+    <AndroidResource Include="Resources\drawable\ArrowBack.png" />
+    <AndroidResource Include="Resources\layout\AGResidenceListScreen.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

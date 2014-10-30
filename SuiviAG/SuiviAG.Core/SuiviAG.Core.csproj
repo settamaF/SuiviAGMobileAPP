@@ -40,6 +40,9 @@
     <Compile Include="2 - DataAccess\AGRepository.cs" />
     <Compile Include="1 - Data\AGDatabase.cs" />
     <Compile Include="1 - Data\SQLite.cs" />
+    <Compile Include="3 - Business\Entity\AGEntreprise.cs" />
+    <Compile Include="3 - Business\Entity\AGDevis.cs" />
+    <Compile Include="3 - Business\Entity\AGFacture.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
