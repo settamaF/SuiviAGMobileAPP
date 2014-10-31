@@ -1,24 +1,3 @@
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.pdb
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll.mdb
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.SuiviAGAndroid.apk
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.SuiviAGAndroid-Signed.apk
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\SuiviAGAndroid.dll
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\SuiviAGAndroid.pdb
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\android\bin\SuiviAGAndroid.SuiviAGAndroid.apk
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\main.xml
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\values\strings.xml
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencelistitem.xml
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencedetails.xml
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\R.cs.flag
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\uploadflags.txt
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-hdpi\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-ldpi\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-mdpi\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xhdpi\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xxhdpi\icon.png
-C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxlistitem.xml
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.pdb
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll.mdb
@@ -40,6 +19,27 @@ D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxlistitem.xml
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\R.cs.flag
 D:\Users\Frederic\Documents\France immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\uploadflags.txt
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.pdb
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.dll.mdb
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.SuiviAGAndroid.apk
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\bin\Debug\SuiviAGAndroid.SuiviAGAndroid-Signed.apk
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\SuiviAGAndroid.dll
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\SuiviAGAndroid.pdb
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\android\bin\SuiviAGAndroid.SuiviAGAndroid.apk
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\values\strings.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencelistitem.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencedetails.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-ldpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\main.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxlistitem.xml
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable\search.png
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\drawable\arrowback.png
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencelistscreen.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\R.cs.flag
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\uploadflags.txt

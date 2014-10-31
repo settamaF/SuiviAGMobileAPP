@@ -56,7 +56,7 @@ namespace SuiviAG.Core.DAL
 
 		public static AGTravaux GetAGTravaux(int id)
 		{
-			return me.db.GetItem<AGTravaux>(id);
+			return me.db.GetItem<AGTravaux> (id);
 		}
 
 		public static IEnumerable<AGTravaux> GetAGTravaux ()
@@ -92,6 +92,66 @@ namespace SuiviAG.Core.DAL
 		public static int DeleteAGResidence(int id)
 		{
 			return me.db.DeleteItem<AGResidence>(id);
+		}
+
+		public static AGEntreprise GetAGEntreprise(int id)
+		{
+			return me.db.GetItem<AGEntreprise>(id);
+		}
+
+		public static IEnumerable<AGEntreprise> GetAGEntreprise ()
+		{
+			return me.db.GetItems<AGEntreprise>();
+		}
+
+		public static int SaveAGEntreprise (AGEntreprise item)
+		{
+			return me.db.SaveItem<AGEntreprise>(item);
+		}
+
+		public static int DeleteAGEntreprise(int id)
+		{
+			return me.db.DeleteItem<AGEntreprise>(id);
+		}
+
+		public static AGDevis GetAGDevis(int id)
+		{
+			return me.db.GetItem<AGDevis>(id);
+		}
+
+		public static IEnumerable<AGDevis> GetAGDevis ()
+		{
+			return me.db.GetItems<AGDevis>();
+		}
+
+		public static int SaveAGDevis (AGDevis item)
+		{
+			return me.db.SaveItem<AGDevis>(item);
+		}
+
+		public static int DeleteAGDevis(int id)
+		{
+			return me.db.DeleteItem<AGDevis>(id);
+		}
+
+		public static AGFacture GetAGFacture(int id)
+		{
+			return me.db.GetItem<AGFacture>(id);
+		}
+
+		public static IEnumerable<AGFacture> GetAGFacture ()
+		{
+			return me.db.GetItems<AGFacture>();
+		}
+
+		public static int SaveAGFacture (AGFacture item)
+		{
+			return me.db.SaveItem<AGFacture>(item);
+		}
+
+		public static int DeleteAGFacture(int id)
+		{
+			return me.db.DeleteItem<AGFacture>(id);
 		}
 	}
 }

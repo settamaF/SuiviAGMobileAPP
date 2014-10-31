@@ -12,8 +12,11 @@ namespace SuiviAG.Core.DataLayer
 
 		public AGDatabase (string path) : base (path)
 		{
-			CreateTable<AGTravaux> ();
 			CreateTable<AGResidence> ();
+			CreateTable<AGEntreprise> ();
+			CreateTable<AGTravaux> ();
+			CreateTable<AGDevis> ();
+			CreateTable<AGFacture> ();
 			InitDatabase ();
 		}
 
@@ -70,9 +73,8 @@ namespace SuiviAG.Core.DataLayer
 		{
 			if (this.Table<AGResidence> ().Count () == 0)
 				this.InitDatabaseResidence ();
-
-
-
+			if (this.Table<AGEntreprise> ().Count () == 0)
+				this.InitDatabaseEntreprise ();
 			if (this.Table<AGTravaux> ().Count () == 0)
 				this.InitDatabaseTravaux ();
 		}
@@ -81,39 +83,50 @@ namespace SuiviAG.Core.DataLayer
 		{
 			var newResidence = new AGResidence ();
 			newResidence.Name = "Clos bastille";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Espace Republique";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Refuge";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Robert";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Villas Olympe";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Hibicus";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Aromes";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 			newResidence.Name = "Belem1";
-			newResidence.Adress = "";
+			newResidence.Adress = "Inconnu";
 			this.Insert (newResidence);
 		}
 
 		private void InitDatabaseTravaux()
 		{
-
+			var newTravaux = new AGTravaux ();
+			newTravaux.DateVote = new DateTime(2014, 05, 27);
+			newTravaux.DateEcheance = new DateTime(2014, 08, 12);
+			newTravaux.Motif = "Expertise Tech";
+			newTravaux.AppelFond = false;
+			newTravaux.Avancement = 0;
+			newTravaux.Note = "A faire au 01/05/2015";
+			newTravaux.IdResidence = Table<AGResidence>().Where(v => v.Name.Contains("Clos bastille")).FirstOrDefault().ID;
+			newTravaux.IdEntreprise = Table<AGEntreprise>().Where(v => v.Name.Contains("Entreprise 1")).FirstOrDefault().ID;
+			this.Insert(newTravaux);
 		}
 
 		private void InitDatabaseEntreprise()
 		{
-
+			var newEntreprise = new AGEntreprise ();
+			newEntreprise.Name = "Entreprise 1";
+			newEntreprise.Adress = "Inconnu";
 		}
 
 		private void initDatabaseDevis()

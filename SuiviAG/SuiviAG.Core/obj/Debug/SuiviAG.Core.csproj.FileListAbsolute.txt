@@ -1,0 +1,5 @@
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAG.Core\bin\Debug\SuiviAG.Core.dll.config
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAG.Core\bin\Debug\SuiviAG.Core.dll
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAG.Core\bin\Debug\SuiviAG.Core.pdb
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAG.Core\obj\Debug\SuiviAG.Core.dll
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAG.Core\obj\Debug\SuiviAG.Core.pdb

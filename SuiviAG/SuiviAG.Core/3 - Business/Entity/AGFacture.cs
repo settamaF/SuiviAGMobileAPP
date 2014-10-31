@@ -10,7 +10,9 @@ namespace SuiviAG.Core.Entity
 		{
 		}
 
-
+		public DateTime Date { get; set; }
+		public float Prix { get; set;}
+		public int IdEntreprise { get; set; }
 	}
 }
 

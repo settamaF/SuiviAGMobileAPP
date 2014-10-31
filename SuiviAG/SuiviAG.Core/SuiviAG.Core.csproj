@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -39,10 +40,11 @@
     <Compile Include="3 - Business\AGManagement\AGManager.cs" />
     <Compile Include="2 - DataAccess\AGRepository.cs" />
     <Compile Include="1 - Data\AGDatabase.cs" />
-    <Compile Include="1 - Data\SQLite.cs" />
     <Compile Include="3 - Business\Entity\AGEntreprise.cs" />
     <Compile Include="3 - Business\Entity\AGDevis.cs" />
     <Compile Include="3 - Business\Entity\AGFacture.cs" />
+    <Compile Include="1 - Data\SQLite.cs" />
+    <Compile Include="1 - Data\SQLiteAsync.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -52,5 +54,8 @@
     <Folder Include="3 - Business\AGManagement\" />
     <Folder Include="1 - Data\" />
     <Folder Include="2 - DataAccess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
 </Project>

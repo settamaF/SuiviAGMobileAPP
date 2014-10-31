@@ -49,6 +49,66 @@ namespace SuiviAG.Core.Business
 		{
 			return DAL.AGRepository.DeleteAGResidence(id);
 		}
+
+		public static AGDevis GetAGDevis(int id)
+		{
+			return DAL.AGRepository.GetAGDevis(id);
+		}
+
+		public static IList<AGDevis> GetAGDevis()
+		{
+			return new List<AGDevis>(DAL.AGRepository.GetAGDevis ());
+		}
+
+		public static int SaveAGDevis (AGDevis item)
+		{
+			return DAL.AGRepository.SaveAGDevis(item);
+		}
+
+		public static int DeleteAGDevis(int id)
+		{
+			return DAL.AGRepository.DeleteAGDevis(id);
+		}
+
+		public static AGFacture GetAGFacture(int id)
+		{
+			return DAL.AGRepository.GetAGFacture(id);
+		}
+
+		public static IList<AGFacture> GetAGFacture()
+		{
+			return new List<AGFacture>(DAL.AGRepository.GetAGFacture ());
+		}
+
+		public static int SaveAGFacture (AGFacture item)
+		{
+			return DAL.AGRepository.SaveAGFacture(item);
+		}
+
+		public static int DeleteAGFacture(int id)
+		{
+			return DAL.AGRepository.DeleteAGFacture(id);
+		}
+
+		public static AGEntreprise GetAGEntreprise(int id)
+		{
+			return DAL.AGRepository.GetAGEntreprise(id);
+		}
+
+		public static IList<AGEntreprise> GetAGEntreprise()
+		{
+			return new List<AGEntreprise>(DAL.AGRepository.GetAGEntreprise ());
+		}
+
+		public static int SaveAGEntreprise (AGEntreprise item)
+		{
+			return DAL.AGRepository.SaveAGEntreprise(item);
+		}
+
+		public static int DeleteAGEntreprise(int id)
+		{
+			return DAL.AGRepository.DeleteAGEntreprise(id);
+		}
 	}
 }
 

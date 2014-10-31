@@ -9,6 +9,9 @@ namespace SuiviAG.Core.Entity
 		public AGEntreprise ()
 		{
 		}
+
+		public string Name { get; set; }
+		public string Adress {get; set; }
 	}
 }
 
