@@ -19,11 +19,9 @@ namespace SuiviAGAndroid.UI {
 	public class AGResidenceDetailsScreen : Activity {
 		protected AGResidence agResidence = new AGResidence();
 		protected Button cancelDeleteButton = null;
-		protected Button cancelButton = null;
 		protected EditText adresseTextEdit = null;
 		protected EditText nameTextEdit = null;
 		protected Button saveButton = null;
-		protected LinearLayout AGResidenceDetailsLayout = null;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -38,7 +36,7 @@ namespace SuiviAGAndroid.UI {
 				}
 			}
 
-			int agResidenceID = Intent.GetIntExtra("AGResidenceID", 0);
+			int agResidenceID = Intent.GetIntExtra("AGResidenceId", 0);
 			if(agResidenceID > 0) {
 				agResidence = SuiviAG.Core.Business.AGManager.GetAGResidence(agResidenceID);
 			}
@@ -47,19 +45,20 @@ namespace SuiviAGAndroid.UI {
 			SetContentView(Resource.Layout.AGResidenceDetails);
 			nameTextEdit = FindViewById<EditText>(Resource.Id.txtAGResidenceName);
 			adresseTextEdit = FindViewById<EditText> (Resource.Id.txtAGResidenceAdresse);
-			saveButton = FindViewById<Button>(Resource.Id.btnAGResidenceSave);
+
 
 			// find all our controls
+			saveButton = FindViewById<Button>(Resource.Id.btnAGResidenceSave);
 			cancelDeleteButton = FindViewById<Button>(Resource.Id.btnAGResidenceCancelDelete);
 
 
 			// set the cancel delete based on whether or not it's an existing choice
 			if(cancelDeleteButton != null)
-			{ cancelDeleteButton.Text = (agResidence.ID == 0 ? "Cancel" : "Delete"); }
+			{ cancelDeleteButton.Text = (agResidence.ID == 0 ? "Annuler" : "Supprimer"); }
+				
 
-			// name
 			if(nameTextEdit != null) { nameTextEdit.Text = agResidence.Name; }
-
+			if(adresseTextEdit != null) { adresseTextEdit.Text = agResidence.Adress; }
 			// button clicks 
 			cancelDeleteButton.Click += (sender, e) => { CancelDelete(); };
 			saveButton.Click += (sender, e) => { Save(); };
@@ -79,6 +78,17 @@ namespace SuiviAGAndroid.UI {
 				SuiviAG.Core.Business.AGManager.DeleteAGResidence(agResidence.ID);
 			}
 			Finish();
+		}
+
+		//A test 
+		protected override void OnResume()
+		{
+			base.OnResume ();
+
+			if (nameTextEdit.Text != "")
+				saveButton.Enabled = true;
+			else
+				saveButton.Enabled = false;
 		}
 	}
 }

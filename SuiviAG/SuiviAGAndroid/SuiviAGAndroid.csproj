@@ -87,6 +87,8 @@
     <Compile Include="..\SuiviAG.Core\1 - Data\SQLiteAsync.cs">
       <Link>1 - Data\SQLiteAsync.cs</Link>
     </Compile>
+    <Compile Include="4 - Application\AGTravauxAdapter.cs" />
+    <Compile Include="5 - UI\AGTravauxDetailsScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -108,6 +110,8 @@
     <AndroidResource Include="Resources\drawable\Search.png" />
     <AndroidResource Include="Resources\drawable\ArrowBack.png" />
     <AndroidResource Include="Resources\layout\AGResidenceListScreen.axml" />
+    <AndroidResource Include="Resources\layout\AGTravauxListScreen.axml" />
+    <AndroidResource Include="Resources\layout\AGTravauxDetails.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

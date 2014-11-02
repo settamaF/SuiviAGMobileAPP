@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Graphics;
+using System;
 
 namespace SuiviAGAndroid
 {
@@ -41,14 +42,7 @@ namespace SuiviAGAndroid
 			addAGTravauxBtn = FindViewById<Button> (Resource.Id.AddAGTravauxButton);
 			if (addAGTravauxBtn != null) {
 				addAGTravauxBtn.Click += (sender, e) => {
-					StartActivity (typeof(AGResidenceDetailsScreen));
-				};
-			}
-
-			addAGTravauxBtn = FindViewById<Button> (Resource.Id.AddAGTravauxButton);
-			if (addAGTravauxBtn != null) {
-				addAGTravauxBtn.Click += (sender, e) => {
-					StartActivity (typeof(AGResidenceDetailsScreen));
+					StartActivity (typeof(AGTravauxDetailsScreen));
 				};
 			}
 //			srcAG = FindViewById<ImageButton> (Resource.Id.btnAGSrc);

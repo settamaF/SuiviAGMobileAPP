@@ -17,20 +17,52 @@ public final class R {
     }
     public static final class id {
         public static final int AGResidenceAdresseLabel=0x7f050003;
+        public static final int AGResidenceLabel=0x7f05000d;
+        public static final int AGResidenceLayout=0x7f05001b;
+        public static final int AGResidenceName=0x7f05001c;
         public static final int AGResidenceNameLabel=0x7f050000;
-        public static final int AddAGTravauxButton=0x7f050010;
+        public static final int AGTravauxAvancementLabel=0x7f050014;
+        public static final int AGTravauxAvancementSeekBar=0x7f050015;
+        public static final int AGTravauxDateEcheanceLabel=0x7f050012;
+        public static final int AGTravauxDateVoteLabel=0x7f050010;
+        public static final int AGTravauxMotifLabel=0x7f05000b;
+        public static final int AGTravauxNoteLabel=0x7f050016;
+        public static final int AddAGTravauxButton=0x7f050030;
+        public static final int Avancement=0x7f050029;
+        public static final int AvancementLabel=0x7f050027;
+        public static final int AvancementValue=0x7f050028;
+        public static final int DateEcheance=0x7f050025;
+        public static final int DateEcheanceLabel=0x7f050024;
+        public static final int DateEcheanceLayout=0x7f050023;
+        public static final int DateVote=0x7f050022;
+        public static final int DateVoteLabel=0x7f050021;
+        public static final int DateVoteLayout=0x7f050020;
         public static final int MainHeader=0x7f050001;
+        public static final int Motif=0x7f05001f;
+        public static final int MotifLabel=0x7f05001e;
+        public static final int MotifLayout=0x7f05001d;
         public static final int btnAGResidenceCancelDelete=0x7f050005;
         public static final int btnAGResidenceSave=0x7f050006;
-        public static final int btnAGSrc=0x7f05000c;
-        public static final int layoutAGSrc=0x7f05000b;
+        public static final int btnAGSrc=0x7f05002c;
+        public static final int btnAGTravauxCancelDelete=0x7f050018;
+        public static final int btnAGTravauxSave=0x7f050019;
+        public static final int layoutAGSrc=0x7f05002b;
+        public static final int linearLayout1=0x7f050026;
         public static final int listResidence=0x7f05000a;
-        public static final int lstAGResidenceButton=0x7f05000f;
-        public static final int lstAGTravauxButton=0x7f05000e;
+        public static final int listTravaux=0x7f05002a;
+        public static final int lstAGResidenceButton=0x7f05002f;
+        public static final int lstAGTravauxButton=0x7f05002e;
         public static final int lstItemAGResidence=0x7f050007;
+        public static final int lstItemAGTravaux=0x7f05001a;
+        public static final int txtAGResidence=0x7f05000f;
         public static final int txtAGResidenceAdresse=0x7f050004;
         public static final int txtAGResidenceName=0x7f050002;
-        public static final int txtAGSrc=0x7f05000d;
+        public static final int txtAGSrc=0x7f05002d;
+        public static final int txtAGTravauxDateEcheance=0x7f050013;
+        public static final int txtAGTravauxDateVote=0x7f050011;
+        public static final int txtAGTravauxMotif=0x7f05000c;
+        public static final int txtAGTravauxNote=0x7f050017;
+        public static final int txtAGTravauxmotif=0x7f05000e;
         public static final int txtAdresse=0x7f050009;
         public static final int txtName=0x7f050008;
     }
@@ -38,8 +70,10 @@ public final class R {
         public static final int agresidencedetails=0x7f030000;
         public static final int agresidencelistitem=0x7f030001;
         public static final int agresidencelistscreen=0x7f030002;
-        public static final int agtravauxlistitem=0x7f030003;
-        public static final int main=0x7f030004;
+        public static final int agtravauxdetails=0x7f030003;
+        public static final int agtravauxlistitem=0x7f030004;
+        public static final int agtravauxlistscreen=0x7f030005;
+        public static final int main=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

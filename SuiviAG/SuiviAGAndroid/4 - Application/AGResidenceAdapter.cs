@@ -4,6 +4,8 @@ using SuiviAG.Core.Entity;
 using Android.App;
 using Android;
 using System.Collections.Generic;
+using SuiviAGAndroid.UI;
+using Android.Content;
 
 namespace SuiviAGAndroid.Application
 {

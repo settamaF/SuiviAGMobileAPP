@@ -16,7 +16,7 @@ using SuiviAG.Core.Entity;
 
 namespace SuiviAGAndroid.UI
 {
-	[Activity (Label = "AGResidenceListScreen")]			
+	[Activity (Label = "liste résidences")]			
 	public class AGResidenceListScreen : Activity
 	{
 		protected Application.AGResidenceAdapter agResidenceList;
@@ -38,7 +38,12 @@ namespace SuiviAGAndroid.UI
 
 			SetContentView (Resource.Layout.AGResidenceListScreen);
 			agResidenceListView = FindViewById<ListView> (Resource.Id.listResidence);
-
+			agResidenceListView.ItemClick += (sender, e) => 
+			{
+				var agResidenceDetailActivity = new Intent (this, typeof(AGResidenceDetailsScreen));
+				agResidenceDetailActivity.PutExtra("AGResidenceId", agResidences[e.Position].ID);
+				StartActivity(agResidenceDetailActivity);
+			};
 		}
 
 		protected override void OnResume()

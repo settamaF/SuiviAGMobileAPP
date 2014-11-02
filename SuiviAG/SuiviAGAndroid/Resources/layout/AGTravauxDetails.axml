@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/AGTravauxMotifLabel"
+                android:text="Travaux voté : "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/txtAGTravauxMotif"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGTravauxMotifLabel" />
+            <TextView
+                android:id="@+id/AGResidenceLabel"
+                android:text="Residence : "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAGTravauxmotif" />
+            <EditText
+                android:id="@+id/txtAGResidence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGResidenceLabel"
+                android:maxLines="1" />
+            <TextView
+                android:id="@+id/AGTravauxDateVoteLabel"
+                android:text="Date du vote : "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAGResidence" />
+            <EditText
+                android:id="@+id/txtAGTravauxDateVote"
+                android:inputType="date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGTravauxDateVoteLabel"
+                android:maxLines="1"
+                android:focusable="false" />
+            <TextView
+                android:id="@+id/AGTravauxDateEcheanceLabel"
+                android:text="Date echeance :"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAGTravauxDateVote" />
+            <EditText
+                android:id="@+id/txtAGTravauxDateEcheance"
+                android:inputType="date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGTravauxDateEcheanceLabel"
+                android:maxLines="1"
+                android:focusable="false" />
+            <TextView
+                android:id="@+id/AGTravauxAvancementLabel"
+                android:text="Avancement :"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAGTravauxDateEcheance" />
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AGTravauxAvancementSeekBar"
+                android:layout_below="@+id/AGTravauxAvancementLabel" />
+            <TextView
+                android:id="@+id/AGTravauxNoteLabel"
+                android:text="Note : "
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGTravauxAvancementSeekBar" />
+            <EditText
+                android:id="@+id/txtAGTravauxNote"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AGTravauxNoteLabel" />
+            <Button
+                android:id="@+id/btnAGTravauxCancelDelete"
+                android:text="Annuler"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAGTravauxNote" />
+            <Button
+                android:id="@+id/btnAGTravauxSave"
+                android:text="Sauvegarder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:layout_below="@+id/btnAGTravauxCancelDelete"
+                android:enabled="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

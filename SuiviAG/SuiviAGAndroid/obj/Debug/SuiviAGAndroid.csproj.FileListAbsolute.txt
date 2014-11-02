@@ -43,3 +43,5 @@ C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndr
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agresidencelistscreen.xml
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\R.cs.flag
 C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\uploadflags.txt
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxlistscreen.xml
+C:\Users\Akamu\Documents\Projet France Immo\SuiviAGMobileAPP\SuiviAG\SuiviAGAndroid\obj\Debug\res\layout\agtravauxdetails.xml

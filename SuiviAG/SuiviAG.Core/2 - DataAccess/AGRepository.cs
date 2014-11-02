@@ -56,7 +56,7 @@ namespace SuiviAG.Core.DAL
 
 		public static AGTravaux GetAGTravaux(int id)
 		{
-			return me.db.GetItem<AGTravaux> (id);
+			return me.db.GetItem<AGTravaux>(id);
 		}
 
 		public static IEnumerable<AGTravaux> GetAGTravaux ()

@@ -3,10 +3,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:scrollbars="vertical"
-    android:scrollbarStyle="outsideInset">
+    android:scrollbarStyle="outsideInset"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
     <TextView
         android:id="@+id/AGResidenceNameLabel"
-        android:text="Name:"
+        android:text="Nom : "
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/MainHeader" />
@@ -15,11 +17,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/AGResidenceNameLabel"
-        android:imeOptions="actionNext"
         android:maxLines="1" />
     <TextView
         android:id="@+id/AGResidenceAdresseLabel"
-        android:text="Adresse:"
+        android:text="Adresse : "
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtAGResidenceName" />
@@ -28,20 +29,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/AGResidenceAdresseLabel"
-        android:imeOptions="actionNext"
         android:maxLines="1" />
     <Button
         android:id="@+id/btnAGResidenceCancelDelete"
-        android:text="Cancel"
+        android:text="Annuler"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtAGResidenceAdresse" />
     <Button
         android:id="@+id/btnAGResidenceSave"
-        android:text="Save"
+        android:text="Sauvegarder"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dip"
         android:paddingBottom="10dip"
-        android:layout_below="@+id/btnAGResidenceCancelDelete" />
+        android:layout_below="@+id/btnAGResidenceCancelDelete"
+        android:enabled="true" />
 </RelativeLayout>
